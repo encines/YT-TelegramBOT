@@ -6,7 +6,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
 # --- CONFIGURACIÓN ---
 TELEGRAM_TOKEN = '8583335986:AAHZc6b_KPmMMXDgCwMLKLTeCKqgAsRaBfA'
-FFMPEG_PATH = r'C:\ffmpeg\bin' # <--- VERIFICA QUE ESTA SEA TU RUTA
+FFMPEG_PATH = r'C:\ffmpeg\bin' # el fokin driver de ffmpeg, necesario para convertir a mp3
 
 async def procesar_descarga(url, update: Update):
     """Maneja la lógica de descarga y envío con reintentos y pausas"""
